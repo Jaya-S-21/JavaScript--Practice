@@ -30,3 +30,13 @@ let f = function name() {
 console.log(f);
 f();
 console.log(typeof f);           //function but actually object
+
+//mutable
+let a = [10,20,30,40];
+a.push(100);
+a[0] = 200;
+console.log(a);
+
+let o = {name: "Mohan", age: 20};
+o.name = "Rohan";
+console.log(o);
