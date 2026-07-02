@@ -60,10 +60,29 @@ console.log(typeof h);
 //console.log(Boolean(""));                    //false for empty string
 //console.log(Boolean(null));                  //false 
 //console.log(Boolean(undefined));             //false
+//console.log(Boolean([]));                    //true (array)
+//console.log(Boolean({}));                    //true (object)
 
 //computer science challenge
-let i = 0.1;
-let j = 0.2;
+let i = "0.1";
+let j = "0.2";
 let k = i + j;
-console.log (k == 0.3);             //false
-console.log (k);                    //0.30000000000000004
+//console.log (k == 0.3);             //false
+//console.log (k);                    //0.30000000000000004
+
+let postfix = 6;
+let prefix = 6;
+//console.log(postfix++);
+//console.log(postfix);
+//console.log(++prefix);
+//console.log(prefix);
+ 
+//console.log("Rohit" > "Mohit");           //true
+//console.log("Rohit" > "mohit");           //false
+
+//console.log(10>="10");                  //true
+//console.log(null>="");                  //true
+//console.log(null == "");                  //false
+
+console.log(null==undefined);              //true -- special case
+console.log(NaN===NaN);                   //false
