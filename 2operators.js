@@ -37,7 +37,7 @@ let e ="102js"
 let f= Number (e);
 console.log( f);             //NaN : Not a Number (type - number)
 
-console.log(0/0);           //NaN
+console.log(0/0);            //NaN
 
 let g = 10;
 let h = String(g);
@@ -49,9 +49,9 @@ console.log(typeof h);
 //console.log(Number(undefined));       //NaN
 
 //console.log(typeof String(true));           //string
-//console.log(typeof String(false));          //string 
-//console.log(typeof String(null));           //string 
-//console.log(typeof String(undefined));      //string
+//console.log(String(false));                 //false 
+//console.log(String(null));                  //null 
+//console.log(String(undefined));             //undefined
 
 //console.log(Boolean(10));                    //true for +ve no.
 //console.log(Boolean(-10));                   //true for -ve no.
@@ -77,12 +77,12 @@ let prefix = 6;
 //console.log(++prefix);
 //console.log(prefix);
  
-//console.log("Rohit" > "Mohit");           //true
-//console.log("Rohit" > "mohit");           //false
+//console.log("Rohit" > "Mohit");              //true
+//console.log("Rohit" > "mohit");              //false
 
-//console.log(10>="10");                  //true
-//console.log(null>="");                  //true
-//console.log(null == "");                  //false
+//console.log(10>="10");                     //true
+//console.log(null>="");                     //true
+//console.log(null == "");                   //false because null is losely equal to undefined rest is false
 
-console.log(null==undefined);              //true -- special case
-console.log(NaN===NaN);                   //false
+console.log(null==undefined);                //true -- special case
+console.log(NaN===NaN);                      //false
