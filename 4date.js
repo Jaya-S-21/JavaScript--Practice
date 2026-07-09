@@ -24,3 +24,9 @@ console.log(dates.toString());
 
 const dates1 = new Date(0);
 console.log(dates1.toString());
+
+const a = new Date(2026,0);                                
+console.log(a.toLocaleString());                             //1/1/2026, 12:00:00 AM
+
+const b = new Date(2026);
+console.log(b.toLocaleString());                             //1/1/1970, 5:30:02 AM
