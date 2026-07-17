@@ -54,6 +54,32 @@ const user3 = {
         return 20;
     }
 }
-console.log(user3);
-const va = user3.greeting();
-console.log(va);
+// console.log(user3);
+// const va = user3.greeting();
+// console.log(va);
+
+//Nested Object
+const a= {
+    name: "Jaya",
+    age: 21,
+    email: 'jaya@gmail.com',
+    address: {
+        city: 'Sri Ganganagar',
+        state: 'Rajasthan'
+    }
+}
+// console.log(a);
+// console.log(a.address.city);                                     //Sri Ganganagar
+
+//copied without reference
+const b = {...a};      //shallow copy                    
+b.name = "Megha";
+// b.address.city = "Jaipur"
+// console.log(a);                                                 //city: 'Jaipur'
+
+//deep copy
+const c = structuredClone(a);
+c.address.city = "Jaipur";
+console.log(a);                                                    //city: 'Sri Ganganagar'
+
+
